@@ -38,7 +38,7 @@ function ChatIcon() {
         setIsLoading(false);
       }, 1500);
     }
-  }, []);
+  }, [messages.length]);
 
   const handleSendMessage = async (prompt: string) => {
     const userInput: Message = {

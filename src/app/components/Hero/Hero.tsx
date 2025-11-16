@@ -20,7 +20,7 @@ function Hero() {
           <Reveal initialX={-40} duration={0.4}>
             <Link href={"mailto:huzaifakhan0856551@gmail.com"} className='self-center flex gap-2.5 p-2.5 text-white bg-primary items-center text-sm rounded font-semibold md:self-start md:text-xl/6'>
             Let&apos;s Connect
-            <img src="/arrow_right_icon.svg" alt="arrow right icon" />
+            <Image src="/arrow_right_icon.svg" alt="arrow right icon" width={24} height={24} />
             </Link>
           </Reveal>
         </div>

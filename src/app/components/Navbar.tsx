@@ -1,7 +1,8 @@
 "use client";
+import Image from "next/image";
 import React, { useCallback, useEffect, useState } from "react";
 import cn from "classnames";
-import Reveal from "./Reveal"
+import Reveal from "./Reveal";
 
 function Navbar() {
   const [activeState, setActiveState] = useState("Home");
@@ -21,23 +22,25 @@ function Navbar() {
     }
   }, []);
 
-  
-  
   return (
     <div className="fixed top-12 right-6 flex mx-auto flex-col gap-2.5 items-end z-50 md:left-1/2 md:right-auto md:-translate-x-1/2">
       <button
         className="bg-background md:hidden p-3 card-shadow"
         onClick={() => setIsOpen((preval) => !preval)}
       >
-        <img
+        <Image
           className="hidden dark:block"
           src={"/menu_icon_dark.svg"}
           alt="menu_icon_dark"
+          width={24}
+          height={24}
         />
-        <img
+        <Image
           className="block dark:hidden"
           src={"/menu_icon_light.svg"}
           alt="menu_icon_light"
+          width={24}
+          height={24}
         />
       </button>
       <Reveal initialY={-20} duration={0.5}>

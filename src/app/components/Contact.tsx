@@ -1,6 +1,7 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import Reveal from "./Reveal";
 import { motion, useMotionValue } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -10,20 +11,23 @@ function Contact() {
   const posX = useMotionValue(0);
   const posY = useMotionValue(0);
 
-  const handleMouseMove = (e: MouseEvent) => {
-    if (!ref.current) return;
+  const handleMouseMove = useCallback(
+    (e: MouseEvent) => {
+      if (!ref.current) return;
 
-    const { top, left } = ref.current.getBoundingClientRect();
-    posX.set(e.x - left);
-    posY.set(e.y - top);
-  };
+      const { top, left } = ref.current.getBoundingClientRect();
+      posX.set(e.x - left);
+      posY.set(e.y - top);
+    },
+    [posX, posY]
+  );
 
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [handleMouseMove]);
   return (
     <Reveal initialY={50} delay={0.5}>
       <section
@@ -42,7 +46,7 @@ function Contact() {
             className="bg-primary flex gap-2.5 p-2.5 self-center md:self-start font-normal rounded text-lg md:text-xl/l items-center text-white"
           >
             {"Let's get in touch"}
-            <img src="mail_icon.svg" alt="Mail Icon" />
+            <Image src="/mail_icon.svg" alt="Mail Icon" width={24} height={24} />
           </Link>
         </div>
         <div className="flex gap-2 justify-center">

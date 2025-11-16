@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio
+
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a software developer. Built with modern web technologies, it features a clean, responsive design, interactive elements, and an integrated AI chatbot for a unique user experience.
+
+## Features
+
+*   **Responsive Design:** Optimized for various screen sizes, from mobile devices to large desktops.
+*   **Interactive UI:** Engaging animations and transitions powered by Framer Motion.
+*   **Project Showcase:** Detailed sections for my key projects with descriptions and links.
+*   **Skills Overview:** A comprehensive list of technologies and tools I'm proficient in.
+*   **Contact Form:** Easily get in touch with me directly through the website.
+*   **AI Chatbot:** An intelligent chatbot powered by Pinecone, providing an interactive way to learn more about me and my work.
+*   **Theme Toggle:** Switch between light and dark modes for a personalized browsing experience.
+
+## Tech Stack
+
+This project is built using the following technologies:
+
+*   **Next.js 14:** A React framework for building full-stack web applications.
+*   **React.js 18:** A JavaScript library for building user interfaces.
+*   **TypeScript:** A strongly typed superset of JavaScript that enhances code quality and maintainability.
+*   **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
+*   **Framer Motion:** A production-ready motion library for React.
+*   **Pinecone:** Vector database for powering the AI chatbot.
+*   **Resend:** For reliable email delivery from the contact form.
+*   **Lucide React & React Icons:** For a wide range of customizable icons.
+*   **React Hook Form:** For efficient and flexible form management.
+*   **React Hot Toast:** For elegant and responsive notifications.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up and run the project locally on your machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+*   Node.js (v18 or higher recommended)
+*   npm or Yarn
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/your-portfolio.git
+    cd your-portfolio
+    ```
+    (Replace `your-username/your-portfolio.git` with the actual repository URL)
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Set up environment variables:**
+    Create a `.env` file in the root directory of the project and add your environment variables. You might need variables for Pinecone, Resend, or other services. An example `.env` file might look like this:
+    ```
+    # Pinecone
+    PINECONE_API_KEY=your_pinecone_api_key
+    PINECONE_ENVIRONMENT=your_pinecone_environment
+    PINECONE_INDEX_NAME=your_pinecone_index_name
+
+    # Resend
+    RESEND_API_KEY=your_resend_api_key
+    FROM_EMAIL=your_verified_resend_email
+    TO_EMAIL=your_recipient_email
+    ```
+    *Note: Ensure you replace placeholder values with your actual API keys and details.*
+
+### Running the Development Server
+
+To start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is designed to be easily deployable to platforms like Vercel, Netlify, or other static site hosting services.
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+Feel free to reach out to me through the contact form on the website or connect with me on:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   [LinkedIn](https://www.linkedin.com/in/your-profile)
+*   [GitHub](https://github.com/your-username)
+*   [Twitter](https://twitter.com/your-username)
+*   [Instagram](https://www.instagram.com/your-username)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+(Replace placeholder links with your actual social media profiles)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.

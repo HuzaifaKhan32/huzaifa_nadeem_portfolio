@@ -1,0 +1,29 @@
+[
+    {
+      "content": "My name is Huzaifa, and I am a passionate web developer with a strong focus on creating modern, responsive, and intelligent web applications."
+    },
+    {
+      "content": "I am currently specializing in the cutting-edge field of Agentic AI development. As part of my advanced training at GIAIC and PIAIC, I am gaining hands-on experience with modern tools like the OpenAI Agent SDK."
+    },
+    {
+      "content": "My core web development tech stack is built on a modern foundation that includes HTML, CSS, JavaScript, and TypeScript. I specialize in using Next.js to build high-performance, server-rendered React applications."
+    },
+    {
+      "content": "For UI/UX development, I am proficient with modern tools like shadcn/ui, which allows me to build beautiful, accessible, and consistent user interfaces efficiently."
+    },
+    {
+      "content": "I am proficient in Python, a skill I leverage for both backend logic and my work in artificial intelligence. This includes experience with libraries like Streamlit for building interactive AI-driven web applications and prototypes."
+    },
+    {
+      "content": "I developed a full-stack e-commerce platform which demonstrates my ability to build complex, end-to-end web applications. The project is live at: https://full-stack-e-commerce-hk.vercel.app"
+    },
+    {
+      "content": "I built a Password Strength Meter using Python and Streamlit to provide real-time feedback on password security. You can try it here: https://password-strength-meter-by-huzaifa.streamlit.app"
+    },
+    {
+      "content": "Highlighting my ability to work with security concepts, I created a Secure Data Encryption tool with Python and Streamlit. It's accessible at: https://secure-data-encrypt.streamlit.app"
+    },
+    {
+      "content": "I also developed a versatile Unit Converter application using Streamlit, showcasing my skill in building functional and user-friendly web tools. You can find it here: https://unit-converter-by-huzaifa.streamlit.app"
+    }
+  ]

@@ -89,12 +89,11 @@ This project is designed to be easily deployable to platforms like Vercel, Netli
 
 Feel free to reach out to me through the contact form on the website or connect with me on:
 
-*   [LinkedIn](https://www.linkedin.com/in/your-profile)
-*   [GitHub](https://github.com/your-username)
-*   [Twitter](https://twitter.com/your-username)
-*   [Instagram](https://www.instagram.com/your-username)
+*   [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/huzaifa-khan-916b31353/))
+*   [GitHub](https://github.com/HuzaifaKhan32)
+*   [Twitter]([https://twitter.com/](https://x.com/Huzaifa_Ndeem))
+*   [Instagram](https://www.instagram.com/hzaifa_nadeem)
 
-(Replace placeholder links with your actual social media profiles)
 
 ## License
 

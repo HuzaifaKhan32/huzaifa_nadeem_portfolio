@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1.0",
 
   verification: {
-    google: "I9F04fEi5UdTqzPoLBV9yt92nCHnDlR5FZq8peTU6qk",
+    google: "ewimc-S5Ev52r8CXxoUWhO35FuS667KC-lqY1lThtVo",
   },
 };
 

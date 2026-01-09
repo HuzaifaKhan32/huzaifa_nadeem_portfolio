@@ -10,23 +10,23 @@
         "languageIcon": ["js_icon.png", "css_icon.png", "html_icon.png"]
     },
     {
-        "thumbnail": "/password-strength.jpeg",
-        "title": "Password Strength Meter",
+        "thumbnail": "/tourism.png",
+        "title": "Tourism Website",
         "links":{
-            "label": "Password-strength",
-        "url": "https://password-strength-meter-by-huzaifa.streamlit.app/"
+            "label": "Tourism",
+        "url": "https://unftourism.vercel.app/"
         },
-        "description": "Developed a password strength meter which check whether the given password is strong or not. Also, generates the strong password",
+        "description": "I have built this for the clients",
         "languageIcon": ["js_icon.png", "css_icon.png", "html_icon.png"]
     },
     {
-        "thumbnail": "/unit-converter.png",
-        "title": "Unit Converter",
+        "thumbnail": "/e-commerce2.png",
+        "title": "E-commerce Website",
         "links":{
-            "label": "Unit-converter",
-        "url": "https://unit-converter-by-huzaifa.streamlit.app/"
+            "label": "E-commerce",
+        "url": "https://e-commerce-website-lyart-delta.vercel.app/"
         },
-        "description": "Developed a unit converter app with streamlit and python. This app converts many units",
+        "description": "I have built this for the clients",
         "languageIcon": ["js_icon.png", "css_icon.png", "html_icon.png"]
     },
     {
@@ -39,5 +39,5 @@
         "description": "Developed a secure data encryption app which allows to registan an account, login, store data, and you can retrieve your data by your secret key",
         "languageIcon": ["js_icon.png", "css_icon.png", "html_icon.png"]
     }
-    
+
 ]

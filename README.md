@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a software developer. Built with modern web technologies, it features a clean, responsive design, interactive elements, and an integrated AI chatbot for a unique user experience.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a software developer. Built with modern web technologies, it features a clean, responsive design, interactive elements, and an integrated AI chatbot for a unique user experience. The portfolio includes showcase projects in tourism and e-commerce domains built with Next.js, Tailwind CSS, and Framer Motion.
 
 ## Features
 
@@ -26,6 +26,15 @@ This project is built using the following technologies:
 *   **Lucide React & React Icons:** For a wide range of customizable icons.
 *   **React Hook Form:** For efficient and flexible form management.
 *   **React Hot Toast:** For elegant and responsive notifications.
+
+## Project Domains
+
+The portfolio features projects in the following domains:
+
+*   **Tourism:** Modern tourism platform showcasing destinations and travel experiences.
+*   **E-commerce:** Comprehensive e-commerce solution with shopping cart and payment integration.
+
+Both domains leverage Next.js, Tailwind CSS, and Framer Motion for optimal performance and user experience.
 
 ## Getting Started
 

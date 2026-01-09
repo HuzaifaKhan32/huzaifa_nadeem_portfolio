@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeToggle from "./components/ThemeToggle";
 import { Toaster } from "react-hot-toast";
 import ChatIcon from "./components/AIChatbot/ChatIcon";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body
         className={`bg-background text-foreground ${inter.className} dark antialiased`}
       >
@@ -40,6 +40,23 @@ export default function RootLayout({
           }}
         />
         {children}
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-X4W3CVE796"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-X4W3CVE796');
+            `,
+          }}
+        />
       </body>
     </html>
   );

@@ -16,8 +16,8 @@
             "label": "Tourism",
         "url": "https://unftourism.vercel.app/"
         },
-        "description": "I have built this for the clients",
-        "languageIcon": ["js_icon.png", "css_icon.png", "html_icon.png"]
+        "description": "Developed this website for a Dubai-based travel agency, featuring modern design, seamless booking experience, and responsive layout for all devices.",
+        "languageIcon": ["nextjs-icon.png", "react_icon.png", "tailwind-icon.svg", "framer-motion-icon.svg"]
     },
     {
         "thumbnail": "/e-commerce2.png",
@@ -26,8 +26,8 @@
             "label": "E-commerce",
         "url": "https://e-commerce-website-lyart-delta.vercel.app/"
         },
-        "description": "I have built this for the clients",
-        "languageIcon": ["js_icon.png", "css_icon.png", "html_icon.png"]
+        "description": "Developed this website for Chamra, featuring product catalog, shopping cart, secure checkout, and smooth animations for enhanced user experience.",
+        "languageIcon": ["nextjs-icon.png", "react_icon.png", "tailwind-icon.svg", "framer-motion-icon.svg"]
     },
     {
         "thumbnail": "/data-encryption.jpg",

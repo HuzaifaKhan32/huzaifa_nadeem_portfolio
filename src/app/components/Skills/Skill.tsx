@@ -39,7 +39,21 @@ function Skill({ icon, name }: Props) {
           WebkitMaskImage: mask,
         }}
       ></motion.div>
-      <Image src={icon} alt={`${name} icon`} width={30} height={30} />
+      {icon.endsWith('.svg') ? (
+        <img 
+          src={icon.startsWith('/') ? icon : `/${icon}`} 
+          alt={`${name} icon`} 
+          className={`w-[30px] h-[30px] object-contain ${icon.includes('framer') ? 'dark:invert' : ''}`}
+        />
+      ) : (
+        <Image 
+          src={icon.startsWith('/') ? icon : `/${icon}`} 
+          alt={`${name} icon`} 
+          width={30} 
+          height={30}
+          className="object-contain"
+        />
+      )}
       <p className="text-lg">{name}</p>
     </div>
   );

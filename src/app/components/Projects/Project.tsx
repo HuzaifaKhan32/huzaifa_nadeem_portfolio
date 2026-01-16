@@ -97,16 +97,44 @@ function Project({
           />
         </Link>
       </div>
-      <p className="line-clamp-2 text-sm md:text-base">{description}</p>
-      <div className="flex relative gap-4">
+      <div className="h-[3rem] md:h-[3.5rem] flex items-start">
+        <p className="line-clamp-2 text-sm md:text-base">{description}</p>
+      </div>
+      <div className="flex relative gap-4 items-center">
         {languageIcon.map((icon, id) => (
-          <Image
-            src={icon}
+          <div
             key={id}
-            alt={`${icon} icon`}
-            width={24}
-            height={24}
-          />
+            className="w-7 h-7 p-1 flex items-center justify-center flex-shrink-0 rounded-md bg-zinc-100/80 dark:bg-zinc-800/60 ring-1 ring-zinc-200 dark:ring-zinc-700"
+          >
+            {/**
+             * Ensure all icons render consistently:
+             * - fixed box size + padding
+             * - object-contain to prevent stretching
+             * - framer icon inverts in dark mode for visibility
+             */}
+            {icon.toLowerCase().endsWith(".svg") ? (
+              // Use <img> for SVGs to avoid any Next/Image SVG restrictions
+              <img
+                src={icon.startsWith("/") ? icon : `/${icon}`}
+                alt={`${icon} icon`}
+                width={24}
+                height={24}
+                className={`object-contain w-full h-full ${
+                  icon.toLowerCase().includes("framer-motion") ? "dark:invert" : ""
+                }`}
+                loading="lazy"
+              />
+            ) : (
+              <Image
+                src={icon.startsWith("/") ? icon : `/${icon}`}
+                alt={`${icon} icon`}
+                width={24}
+                height={24}
+                className="object-contain w-full h-full"
+                loading="lazy"
+              />
+            )}
+          </div>
         ))}
       </div>
     </motion.div>

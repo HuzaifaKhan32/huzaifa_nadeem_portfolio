@@ -30,5 +30,13 @@
     {
         "name": "React JS",
         "icon": "/react_icon.png"
+    },
+    {
+        "name": "Tailwind CSS",
+        "icon": "/tailwind-icon.svg"
+    },
+    {
+        "name": "Framer Motion",
+        "icon": "/framer-motion-icon.svg"
     }
 ]

@@ -1,35 +1,71 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 function TopBackground() {
   return (
     <>
       <div className="absolute w-full max-w-[360px] md:max-w-screen-lg h-[285px] md:h-[656px] top-[188px] -translate-x-1/2 left-1/2 md:top-11 z-10">
         <div className="w-full h-full relative">
-          <div className="circle-icon top-0 left-[177px] md:top-28 md:left-72">
+          <motion.div 
+            className="circle-icon top-0 left-[177px] md:top-28 md:left-72"
+            animate={{
+              y: [0, -15, 0],
+              rotate: [0, 5, -5, 0],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
             <Image
               src={"/rocket_icon.svg"}
               alt="Rocket_icon"
               width={23}
               height={23}
             ></Image>
-          </div>
-          <div className="circle-icon top-[162px] left-5 md:top-64 md:left-0">
+          </motion.div>
+          <motion.div 
+            className="circle-icon top-[162px] left-5 md:top-64 md:left-0"
+            animate={{
+              y: [0, -12, 0],
+              x: [0, 8, -8, 0],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.5,
+            }}
+          >
             <Image
               src={"/github_icon.svg"}
               alt="github_icon"
               width={23}
               height={23}
             ></Image>
-          </div>
-          <div className="circle-icon top-50 -left-[149px] md:top-[530px] md:left-44">
+          </motion.div>
+          <motion.div 
+            className="circle-icon top-50 -left-[149px] md:top-[530px] md:left-44"
+            animate={{
+              y: [0, -10, 0],
+              rotate: [0, -8, 8, 0],
+            }}
+            transition={{
+              duration: 3.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1,
+            }}
+          >
             <Image
               src={"/bracket_icon.svg"}
               alt="bracket_icon"
               width={23}
               height={23}
             ></Image>
-          </div>
+          </motion.div>
           <div className="hidden md:circle-icon md:top-[520px] md:left-[682px]">
             <Image
               src={"/electricity_icon.svg"}

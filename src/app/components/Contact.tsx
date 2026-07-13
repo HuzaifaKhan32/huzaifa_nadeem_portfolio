@@ -60,7 +60,7 @@ function Contact() {
             <FaLinkedin className="w-8 h-8"/>
           </Link>
         </div>
-        <small>Copyright &copy; Huzaifa Nadeem 2025</small>
+        <small>Copyright &copy; Huzaifa Nadeem {new Date().getFullYear()}</small>
         <motion.div
           className="absolute w-64 h-64 bg-gradient-radial from-purple-700/100 to-transparent blur-3xl opacity-0 group-hover:opacity-100 rounded-full -z-10 transition duration-300"
           style={{ left: posX, top: posY, transform: "translate(-50%, -50%)" }}

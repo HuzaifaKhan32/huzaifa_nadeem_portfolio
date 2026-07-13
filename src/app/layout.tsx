@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "./components/ThemeToggle";
@@ -11,11 +11,14 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Huzaifa | Portfolio",
   description: "Huzaifa: Web Developer & Next.js Frontend Specialist. View my portfolio of full-stack projects built with React, TypeScript, and Python. Currently exploring AI integration.",
-  viewport: "width=device-width, initial-scale=1.0",
-
   verification: {
     google: "I9F04fEi5UdTqzPoLBV9yt92nCHnDlR5FZq8peTU6qk",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
